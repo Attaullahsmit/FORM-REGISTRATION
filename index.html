@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with Wider & Taller Fields</title>
+</head>
+<body>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <table border="2" cellpadding="30" cellspacing="8" align="center" width="90%">
+      <caption><h1>Registration Form</h1></caption>
+
+      <tr>
+        <td><label for="fname" style="font-size:20px;"></b>Enter your first name:</b></label></td>
+        <td>
+          <input type="text" id="fname" name="fname" size="60" style="height:35px;" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="lname"style="font-size:20px;">Enter your last name:</label></td>
+        <td>
+          <input type="text" id="lname" name="lname" size="60" style="height:35px;" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="password"style="font-size:20px;">Enter your password:</label></td>
+        <td>
+          <input type="password" id="password" name="password" size="60" style="height:35px;" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="repassword"style="font-size:20px;">Re-enter your password:</label></td>
+        <td>
+          <input type="password" id="repassword" name="repassword" size="60" style="height:35px;" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="address"style="font-size:20px;">Enter your address:</label></td>
+        <td>
+          <textarea id="address" name="address" rows="4" cols="70" required></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="dob"style="font-size:20px;">Select your Date of Birth:</label></td>
+        <td>
+          <input type="date" id="dob" name="dob" style="height:35px;" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="country"style="font-size:20px;">Select your country:</label></td>
+        <td>
+          <select id="country" name="country" style="height:35px;" required>
+            <option value="">--Select Country--</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="photo"style="font-size:20px;">Upload your picture:</label></td>
+        <td>
+          <input type="file" id="photo" name="photo" accept="image/*" style="height:35px;" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Save My Data" style="height:35px; width:150px;">
+          <input type="reset" value="Reset Data" style="height:35px; width:150px;">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+
